@@ -5,6 +5,7 @@ import Controller from "./App/Controller";
 import {IRestaurant, Product} from "./App/Interfaces/RestaurantInterface";
 import allFood from "./Components/AllFood";
 import AllFood from "./Components/AllFood";
+import Opening from "./Components/Opening";
 
 function App() {
     const controller = new Controller();
@@ -61,7 +62,8 @@ function App() {
                     </div>
 
                 </div>
-                <AllFood products={allFood}/>
+                <Opening products={allFood}/>
+                {/*<AllFood products={allFood}/>*/}
             </div>
         </div>
     );
